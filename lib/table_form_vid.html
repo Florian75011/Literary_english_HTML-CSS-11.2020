@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="../../P1_Apprendre_à_apprendre/Carte_mentale/PNG/community.png" type=image/favicon>
+        <title>Le tableau de mes amis d'enfance</title>
+        <link rel="stylesheet" href="media_query.css" />
+        <link rel="stylesheet" href="tableaux.css" />
+		<!-- media="screen and (max-width: 1024px)" ; For big or little screen. My site is responsiv -->
+    </head>
+
+<!-- Les amis sont classés par ordre alphabétique selon le prénom. -->
+    <body>
+        <div class="margin"><center><audio controls loop autoplay>
+            <source src="../doc/relax_nature.mp3">
+            <source src="../doc/relax_nature.ogg">
+        </audio></div></center>
+
+        <table>
+            <caption>Liste des amis d'enfance que je côtoie encore !</caption>
+            <!-- Les balises d'en têtes = les titres des colonnes du tableau. -->
+            <tr>
+                <th>Prénom &amp; nom</th>
+                <th>Âge</th>
+                <th>Origines</th>
+                <th>Profession</th>
+            </tr>
+            <!-- Les balises de chaque ligne du tableau. -->
+            <tr>
+                <td>Driss Tahraoui</td>
+                <td>30 ans</td>
+                <td>Algérienne</td>
+                <td>Développeur</td>
+            </tr>
+            <tr>
+                <td>Emilio Salazar Orsi</td>
+                <td>30 ans</td>
+                <td>Péruvienne</td>
+                <td>Monteur</td>
+            </tr>
+            <tr>
+                <td>Jeff Essoh</td>
+                <td>30 ans</td>
+                <td>Ivoirienne</td>
+                <td>Magasiner</td>
+            </tr>
+            <tr>    
+                <td>Yue Jun Jin</td>
+                <td>30 ans</td>
+                <td>Chinoise</td>
+                <td>Vendeur</td>
+            </tr>
+        </table>
+
+        <div class="img"><img src="../../P1_Apprendre_à_apprendre/Carte_mentale/PNG/community.png"></div>
+        <!-- Mon tableau est petit et suffisamment organisé. Je n'ai pas besoin des <thead>, <tfoot> &amp; <tbody> ni des "rowspan" ou colspan="2" -->
+
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="pays">Quel personnage allez vous sélectionner ?</label><br />
+                    <select name="nom" id="perso">
+                        <optgroup label="Personnages">
+                        <option value="DR">Driss</option>
+                        <option value="EM" selected>Emilio</option>
+                        <option value="JE">Jeff</option>
+                        <option value="YU">Yue Jun</option>
+                        </optgroup>
+                    </select>
+                </p>
+             </form>
+
+            <!-- <p><br />Et vous, dans quelle tranche d'âge vous situez-vous ?<br />
+            <input type="radio" name="age" value="medium15-30" id="medium15-30" /><label>Entre 15 et 30 ans</label>
+            <input type="radio" name="age" value="medium15-30" id="medium30-45" /><label>Entre 30 et 45 ans</label></p> -->
+
+        <!-- Ajout d'un formulaire -->
+        <fieldset>
+            <legend>Vos coordonnées svp.</legend>
+            <p><form method="post" action="traitementbis.php">
+                <label for="pseudo">Pseudonyme :</label>
+                <input type="text" name="pseudo" id="pseudo" size="15" maxlength="12" placeholder="Ex : Floriano87" required />
+
+                <label for="pass">MDP :</label>
+                <input type="password" name="pass" id="pass" size="15" maxlength="12" value="øøøøøøøøøø" />
+
+                <label for="email">Courriel :</label>
+                <input type="email" value="rouanetflorian@gmail.com" />
+
+                <label for="url">Site:</label>
+                <input type="url" value="http://" /><br />
+        </fieldset>
+        <fieldset>
+                <input type="date">
+                <input type="time">
+                <input type="color">
+        </fieldset>
+                <!-- Langage CSS pour éloigner la barre de message. -->
+                <div style="margin-bottom: 10px;"></div>
+                <!-- Ci-dessous est la méthode pour faire un formulaire multiligne -->
+        <fieldset>
+                <textarea rows="10" cols="90">Votre message s'il vous plaît !</textarea></p>
+                <input type="submit" value="Envoyer" /><input type="reset" value="Effacer" />
+        </fieldset>
+    </form>
+                <!-- <form method="post" action="traitement.php">
+                    <p>
+                        Cochez les aliments que vous aimez manger :<br />
+                        <input type="checkbox" name="frites" id="frites" checked /> <label for="frites">Frites</label><br />
+                        <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />
+                        <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />
+                        <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">Huitres</label>
+                    </p>
+                </form> -->
+
+                <div class="margin"><center><p>Have fun and relaxation !</p>
+                <video src="../doc/cat_compil.mp4" controls metadata width:="450" height="450" poster="../doc/cat_fall.jpg">Votre navigateur ne lit pas ce fichier vidéo...</video></div></center>
+    </body>
+</html>

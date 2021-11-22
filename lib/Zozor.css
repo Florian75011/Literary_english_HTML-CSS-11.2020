@@ -1,0 +1,30 @@
+h1 {
+   background-color: red;
+   color: yellow;
+   width: 250px;
+}
+
+nav {
+    display: inline-block;
+    width: 170px;
+    /*margin-right: 150px;*/
+    border: 2px solid black;
+    vertical-align: top;
+    position: relative;
+    left: 45px;
+    top: 45px;
+}
+
+section {
+    display: inline-block;    
+    border: 2px solid blue;
+    vertical-align: top;
+    position: relative;
+    left: 55px;
+    top: 10px;
+    /*margin-left: 170px;*/
+}
+
+/*position: fixed;
+right: 0px;
+bottom: 0px;*/
